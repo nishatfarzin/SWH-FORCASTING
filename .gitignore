@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/stations/
+data/demo/
+data/stations_demo/
+results_demo/
+*.nc
+.ipynb_checkpoints/

@@ -1,0 +1,11 @@
+# Station positions used in the study. wave_cell_* is the CMEMS wave-model cell that was actually used
+# (nearest cell to the requested position); depths come from the GEBCO 2026 grid (15 arc-second).
+#   gebco_point_depth_m : depth at the requested position
+#   cell_*              : mean / min / max depth inside the +/-0.1 degree box around the wave cell
+# depth_plot_m (cell mean) is the depth used on the x-axis of the synthesis figure.
+stations:
+  P1: {name: "Open Bay of Bengal", lat: 18.5, lon: 89.5, wave_cell_lat: 18.6, wave_cell_lon: 89.6, gebco_point_depth_m: 2061, cell_mean_depth_m: 2031, cell_min_depth_m: 1983, cell_max_depth_m: 2066, depth_plot_m: 2031}
+  P2: {name: "Upper slope",        lat: 20.0, lon: 90.5, wave_cell_lat: 20.0, wave_cell_lon: 90.6, gebco_point_depth_m: 712,  cell_mean_depth_m: 806,  cell_min_depth_m: 365,  cell_max_depth_m: 1324, depth_plot_m: 806}
+  P3: {name: "Mid-shelf (off Matarbari)", lat: 21.0, lon: 91.5, wave_cell_lat: 21.0, wave_cell_lon: 91.6, gebco_point_depth_m: 63, cell_mean_depth_m: 56, cell_min_depth_m: 27, cell_max_depth_m: 67, depth_plot_m: 56}
+  P4: {name: "Inner shelf (Chattogram approach)", lat: 22.0, lon: 91.7, wave_cell_lat: 22.0, wave_cell_lon: 91.6, gebco_point_depth_m: 9, cell_mean_depth_m: 13.7, cell_min_depth_m: 7, cell_max_depth_m: 24, depth_plot_m: 13.7}
+  P5: {name: "Inner shelf (off Sandwip)", lat: 22.3, lon: 91.4, wave_cell_lat: 22.0, wave_cell_lon: 91.4, gebco_point_depth_m: 1, cell_mean_depth_m: 14.6, cell_min_depth_m: 9, cell_max_depth_m: 23, depth_plot_m: 14.6}

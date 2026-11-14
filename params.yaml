@@ -1,0 +1,32 @@
+data:
+  step_hours: 3
+  train_end_year: 2014
+  val_end_year: 2018          # test = 2019 onwards
+forecast:
+  horizons_hours: [6, 12, 24]
+  window_steps: 16            # 48 h of input
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  losses: [mse, mae, huber, focal_mse, focal_mse_norm, target_weighted_mse]
+  max_epochs: 40
+  batch_size: 64
+  lr: 0.001
+  block_length_steps: 56      # 7 days, for the block bootstrap
+evt:
+  separation_hours: 48
+  threshold_quantile: 0.91
+  quantile_grid: [0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96]
+  separation_grid_hours: [24, 48, 72]
+  return_periods: [5, 10, 25, 50, 100]
+  n_boot: 1000
+  cyclone_distance_km: 800
+  cyclone_window_hours: 48
+storms_in_test_period:
+  # Amphan and Mocha use the windows of the first analysis; the others are approximate.
+  # Check every window against scripts/list_storms.py (IBTrACS) before use.
+  Fani: ["2019-04-26", "2019-05-04"]
+  Bulbul: ["2019-11-05", "2019-11-11"]
+  Amphan: ["2020-05-18", "2020-05-22"]
+  Yaas: ["2021-05-23", "2021-05-27"]
+  Sitrang: ["2022-10-22", "2022-10-26"]
+  Mocha: ["2023-05-12", "2023-05-16"]
+  Midhili: ["2023-11-15", "2023-11-18"]
