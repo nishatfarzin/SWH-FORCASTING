@@ -1,6 +1,4 @@
-# Cross-shelf wave forecast skill and extreme wave heights, northern Bay of Bengal
-
-[![tests](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions/workflows/tests.yml/badge.svg)](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions)
+# Cross-shelf wave forecast skill and extreme wave heights: northern Bay of Bengal
 
 Code behind the paper *Cross-shelf variability of wave forecast skill and extreme significant wave height in the
 northern Bay of Bengal: implications for coastal and offshore engineering* (Farzin, Tahura and Rifat).
@@ -54,8 +52,7 @@ Credentials are needed for the Climate Data Store (`~/.cdsapirc`) and Copernicus
 
 ## Running it
 
-Everything below is run from the repository root. `Cross_shelf_wave_pipeline_Colab.ipynb` (in the Zenodo record)
-runs the same steps on Google Colab and keeps all outputs on Google Drive.
+Everything below is run from the repository root. `Cross_shelf_wave_pipeline_Colab.ipynb`
 
 ```
 # 1  station files (either from your own extraction ...)
@@ -119,11 +116,10 @@ Every table and figure number is produced from a CSV under `results/`. The Zenod
 the paper contains the extracted station series and these CSV files, so the figures can be rebuilt without repeating the
 downloads or the training.
 
-## Use of AI assistance
-
-Parts of this code were written and debugged with the help of Claude (Anthropic). The authors reviewed, tested and are
-responsible for it.
-
 ## Citation and licence
 
 See `CITATION.cff`. Code is released under the MIT licence (`LICENSE`).
+
+## Archive
+[![tests](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions/workflows/tests.yml/badge.svg)](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions)
+
