@@ -115,5 +115,5 @@ python scripts/aggregate_forecast.py --baselines results_demo/baselines --lstm r
 See `CITATION.cff`. Code is released under the MIT licence (`LICENSE`).
 
 ## Archive
-[![tests](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions/workflows/tests.yml/badge.svg)](https://github.com/[USER]/cross-shelf-wave-hs-bay-of-bengal/actions)
+[![DOI](https://zenodo.org/badge/1450580433.svg)](https://doi.org/10.5281/zenodo.24252821)
 
