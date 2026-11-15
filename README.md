@@ -110,12 +110,6 @@ python scripts/aggregate_forecast.py --baselines results_demo/baselines --lstm r
 * **Cyclone labelling**: a storm peak counts as cyclone-related if an IBTrACS point lies within a chosen distance and time
   window. Both limits are analyst choices and are varied in the sensitivity analysis.
 
-## Reproducing the paper
-
-Every table and figure number is produced from a CSV under `results/`. The Zenodo record for the release that matches
-the paper contains the extracted station series and these CSV files, so the figures can be rebuilt without repeating the
-downloads or the training.
-
 ## Citation and licence
 
 See `CITATION.cff`. Code is released under the MIT licence (`LICENSE`).
